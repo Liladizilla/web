@@ -1,0 +1,238 @@
+/* Cyberpunk Colors */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Hide Main Content Initially */
+.main-container {
+    display: none; /* Hidden initially */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Boot Screen */
+.boot-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.glitch {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 3px 3px 5px red, -3px -3px 5px blue; }
+    50% { text-shadow: -3px -3px 5px red, 3px 3px 5px blue; }
+    100% { text-shadow: 3px 3px 5px red, -3px -3px 5px blue; }
+}
+
+/* Buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0ff;
+    border: 2px solid #0ff;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #0ff;
+    color: black;
+    box-shadow: 0px 0px 10px #0ff;
+}
+
+body {
+    background: black;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Cyberpunk Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 3px 3px 5px red, -3px -3px 5px blue; }
+    50% { text-shadow: -3px -3px 5px red, 3px 3px 5px blue; }
+    100% { text-shadow: 3px 3px 5px red, -3px -3px 5px blue; }
+}
+
+/* Boot Screen */
+.boot-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    font-size: 1.5rem;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 6rem;
+    text-transform: uppercase;
+    animation: glitch 1.5s infinite;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0ff;
+    border: 2px solid #0ff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: #0ff;
+    color: black;
+    box-shadow: 0px 0px 20px #0ff;
+}
+
+/* Cyberpunk Glow Effect */
+@keyframes neon-glow {
+    0% { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
+    50% { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
+    100% { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
+}
+
+.btn {
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+/* Background Animation */
+@keyframes backgroundMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    background: url('assets/vinicius-alves-cyberpunk-night-club-artsta.jpg') no-repeat center center/cover;
+    animation: backgroundMove 10s infinite alternate;
+}
+
+/* Fade-In Effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.main-container {
+    display: none;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .services-container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.services-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-box {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-box h2 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+    color: cyan;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: lightgray;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: cyan;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #00aaff;
+}

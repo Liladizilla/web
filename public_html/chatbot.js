@@ -1,4 +1,4 @@
-const API_KEY = "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";  // Replace with your actual OpenAI API key
+const API_KEY = ProcessingInstruction.env.OPENAI_API_KEY;  // Replace with your actual OpenAI API key
 
 document.getElementById("send-btn").addEventListener("click", sendMessage);
 

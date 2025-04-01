@@ -1,5 +1,3 @@
-const API_KEY = ProcessingInstruction.env.OPENAI_API_KEY;  // Replace with your actual OpenAI API key
-
 document.getElementById("send-btn").addEventListener("click", sendMessage);
 
 async function sendMessage() {
